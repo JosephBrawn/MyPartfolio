@@ -1,0 +1,133 @@
+.box{
+    margin-top: 40px;
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 30px 60px  rgba(51,51,51,0.2);
+    background:rgba(51,51,51,1);
+}
+.box:hover{
+    background: linear-gradient(60deg, rgba(51,51,51,1) 10%, rgba(0,0,0,1) 100%);
+}
+.box .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+
+}
+.box .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: orange;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.box .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 *87) /100);
+    stroke: orange;
+    opacity: 10;
+    animation: animate-circle 3s cubic-bezier(0,0.23,1,.1); 
+}
+@keyframes animate-circle {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 440;
+    }
+    30% {
+        opacity: 0.30;
+        stroke-dashoffset: 200;
+    }
+    80% {
+        opacity: 0.80;
+        stroke-dashoffset: 100;
+    }
+    100% {
+        opacity: 10;
+    }
+}
+.percent-number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+}
+.box .percent .number .h2{
+    font-size: 48px;
+
+}
+.percent-syblol{    
+    font-size: 24px;
+}
+.text{
+    margin-top: 40px;
+    padding: 10px,0,0;
+    color:orange;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.skills-wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+.card-wrappper{
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;      
+}
+.css-circle .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 *77) /100);
+    stroke: #afdafc;
+}
+.percent-number-css{
+    color: #afdafc;
+}
+.text-css{
+    color: #afdafc;
+}
+.js-circle .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 *57) /100);
+    stroke:yellow;
+}
+.percent-number-js{
+    color: yellow;
+}
+.text-js{
+    color: yellow;
+}
+.react-circle .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 *17) /100);
+    stroke:#30d5c8;
+}
+.percent-number-react{
+    color:#30d5c8;
+}
+.text-react{
+    color:#30d5c8;
+}
+#skills{
+    margin-top: 80px;
+}

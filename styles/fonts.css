@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Halo";
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url("../fonts/HaloGrotesk-Regular.woff") format("woff"),
+    url("../fonts/HaloGrotesk-Regular.woff2") format('woff2');
+}

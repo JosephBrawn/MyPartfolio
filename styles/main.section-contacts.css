@@ -1,0 +1,63 @@
+.contact-info {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+  
+.contact-info p {
+  margin-bottom: 10px;
+}
+  
+.contact-info a {
+  color:  rgba(51,51,51,1);
+  text-decoration: none;
+}  
+.contact-info a:hover {
+  text-decoration: underline;
+}
+.contacts{
+  flex-flow: column;
+  align-items: normal;
+}
+#contact{
+  margin-top: 80px;
+}
+#email{
+  width: 50px;
+  height: 50px;
+}
+#email:hover{
+  width: 45px;
+  height: 45px;
+}
+.contact-wrapper{
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 15px;
+}
+.phone{    
+  width: 50px;
+  height: 50px;
+}
+.phone:hover{
+  width: 45px;
+  height: 45px;
+}
+.vk{
+  width: 50px;
+  height: 50px;
+}
+.vk:hover{
+  width: 45px;
+  height: 45px;
+}
+.github{
+  width:50px;
+  height:50px;
+}
+.github:hover{
+  width:45px;
+  height:45px;
+}
+
